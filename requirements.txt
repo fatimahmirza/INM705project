@@ -1,0 +1,17 @@
+Pillow
+collections
+google
+matplotlib
+numpy
+os
+pandas
+pytorch_model_summary
+random
+shutil
+sys
+time
+torch
+torchvision
+tqdm
+wandb
+torchaudio

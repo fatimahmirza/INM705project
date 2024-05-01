@@ -1,0 +1,21 @@
+# config.yaml
+
+# batch size 64 is used for both of the best checkpoint models.
+# checkpoint_mAP 0.0 means save model at every epoch.
+# checkpoint_mAP above 0.0 means model will only be saved when this threshold is met. 
+models_config:
+
+  seed : 123
+  batch_size : 64
+  test_batch_size : 16
+  epochs : 100
+  weight_decay : 0
+  checkpoint_mAP : 0.85
+
+  API_KEY: "PUT_YOUR_WANDB_API_KEY_HERE"
+
+  baseline:
+    learning_rate: 2e-5
+
+  improved:
+    learning_rate: 1e-3
