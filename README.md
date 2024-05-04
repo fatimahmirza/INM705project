@@ -28,12 +28,15 @@ and in the file " inference models.ipynb" for improved one.
 -  epochs : 100
 -  weight_decay : 0
 -  checkpoint_mAP : 0.85
-
+- optimizer : Adam
 -  baseline:
     learning_rate: 2e-5
 
 -  improved:
     learning_rate: 1e-3
+### TRain baseline model
+- To train baseline model put your path directories in the file " train_baseline_model.py "
+- To train imroved model put your path directories in the file " train_improved_model.py "
 ## Checkpoints 
 - save_checkpoint(state, filename="my_checkpoint.pth.tar"):  Put your path directory
 -    print("=> Saving checkpoint")
