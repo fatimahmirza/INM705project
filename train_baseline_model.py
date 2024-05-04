@@ -113,9 +113,8 @@ def main():
         drop_last=True,
     )
 
-    # wandb.init  initialized a project named as 'train_yolo' in your profile and make create run which will log each and every training cycle metrics.
+    # wandb.init  initialized a project named as 'train_yolo' in my profile and after running which will log each and every training cycle metrics.
     # you will be asked to enter your API key.
-    # wandb provides API key with a free account.
     wandb.init(project='baseline_model')
 
     for epoch in range(EPOCHS):
@@ -137,7 +136,7 @@ def main():
                 "optimizer": optimizer.state_dict(),
             }
 
-            # enter the path where you want to save the model on colab.
+            # enter the path where you want to save the model.
             # model will be only saved when mAP is greater than CHECKPOINT_MODEL%
             model_save_path = r"saved_models/baseline_" + \
                 str(epoch)+"_"+str(mean_avg_prec)+".pth.tar"
