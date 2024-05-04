@@ -15,6 +15,7 @@ Before running the code, ensure you have sucessfully installed the following fil
 Set up the configuration file first. You need to put your API key in the "train_baseline_model.py' and "train_improved_model.py" file if you want to load the weights and biases.
 - config = load_config("config.yaml")
 - print(config)
+- LEARNING_RATE = float(config['models_config']['baseline']['learning_rate'])
 - BATCH_SIZE = int(config['models_config']['batch_size'])
 - WEIGHT_DECAY = int(config['models_config']['weight_decay'])
 - EPOCHS = int(config['models_config']['epochs'])
@@ -22,6 +23,7 @@ Set up the configuration file first. You need to put your API key in the "train_
 - CHECKPOINT_MODEL = float(config['models_config']['checkpoint_mAP'])
 
 - os.environ["WANDB_API_KEY"] = API_KEY
+- Similarly for the improved model as well.
 
 ### Load model
 Load the pretrained modle from the file 
