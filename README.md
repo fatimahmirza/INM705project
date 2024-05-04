@@ -11,10 +11,12 @@ Also
 - GPU + CUDA
 ## Setup
 ### Configuration 
-Set up the configuration first. You need to put your API key in the configuration file if you want to load the weights and biases.
+Set up the configuration file first. You need to put your API key in the configuration file if you want to load the weights and biases.
 - config = load_config("config.yaml")
-print(config)
-- 
+  print(config)
+### Load model
+Load the pretrained modle from the file 
+- LOAD_MODEL_FILE= r'saved_models/model_full_data_80_tensor(0.9161).pth.tar' : put your path directory here.
 ### Running or Testing
 For further development or testing you need to run it locally.You need to put your path directory in the file for baseline model 
 and in the file " for improved one.
