@@ -3,7 +3,8 @@
 The content of this repository related to the coursework of INM705. This readme file provides the detailed instruction on how to set-up and training procedure for the baseline model and also for the improved model. An implementation of "yolov1" for baseline and "ResNet50" for advanced model for object detection. Pytorch is served as a programming language for this project.
 ## Dataset 
 I used a subset of PASCAL VOC 2007. After preprocessing, I split the data into train and test folders.
-The datset is provided by the link https://1drv.ms/f/s!AviR1kFjoZOZbaMRIhYQlvfTXqA?e=nxzFIY
+you can instead download everything from that shared link since the dataset is included as well as all the code files.  
+-link https://1drv.ms/f/s!AviR1kFjoZOZbaMRIhYQlvfTXqA?e=nxzFIY
 ## Prerequisistes
 Before running the code, ensure you have sucessfully installed the following files
 - requirement.txt
