@@ -34,8 +34,9 @@ and in the file " inference models.ipynb" for improved one.
 -  improved:
     learning_rate: 1e-3
 ## Checkpoints 
-save_checkpoint(state, filename="my_checkpoint.pth.tar"):
-    print("=> Saving checkpoint")
-    torch.save(state, filename) :  To save checkpoints.
-
+- save_checkpoint(state, filename="my_checkpoint.pth.tar"):
+-    print("=> Saving checkpoint")
+  -  torch.save(state, filename) :  To save checkpoints.
+-  checkpoint_mAP 0.0 means save model at every epoch.
+- checkpoint_mAP above 0.0 means model will only be saved when this threshold is met. 
 
