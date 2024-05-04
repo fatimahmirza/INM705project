@@ -12,6 +12,9 @@ Also
 ## Setup
 ### Configuration 
 Set up the configuration first. You need to put your API key in the configuration file if you want to load the weights and biases.
+- config = load_config("config.yaml")
+print(config)
+- 
 ### Running or Testing
 For further development or testing you need to run it locally.You need to put your path directory in the file for baseline model 
 and in the file " for improved one.
