@@ -21,7 +21,7 @@ Set up the configuration file first. You need to put your API key in the "train_
 - API_KEY = str(config['models_config']['API_KEY'])
 - CHECKPOINT_MODEL = float(config['models_config']['checkpoint_mAP'])
 
-os.environ["WANDB_API_KEY"] = API_KEY
+- os.environ["WANDB_API_KEY"] = API_KEY
 
 ### Load model
 Load the pretrained modle from the file 
