@@ -5,8 +5,9 @@ The content of this repository related to the coursework of INM705. This readme 
 I used a subset of PASCAL VOC 2007. After preprocessing, I split the data into train and test folders.
 The datset is provided by the link https://1drv.ms/f/s!AviR1kFjoZOZbaMRIhYQlvfTXqA?e=nxzFIY
 ## Prerequisistes
-Before running the code, ensure you have sucessfully installed the "requirement.txt" file.
-Also
+Before running the code, ensure you have sucessfully installed the following files
+- requirement.txt
+- pip install -r requirement.txt
 - Python 3.8
 - GPU + CUDA
 ## Setup
@@ -34,7 +35,7 @@ and in the file " inference models.ipynb" for improved one.
 -  improved:
     learning_rate: 1e-3
 ## Checkpoints 
-- save_checkpoint(state, filename="my_checkpoint.pth.tar"):
+- save_checkpoint(state, filename="my_checkpoint.pth.tar"):  Put your path directory
 -    print("=> Saving checkpoint")
   -  torch.save(state, filename) :  To save checkpoints.
 -  checkpoint_mAP 0.0 means save model at every epoch.
