@@ -12,9 +12,17 @@ Before running the code, ensure you have sucessfully installed the following fil
 - GPU + CUDA
 ## Setup
 ### Configuration 
-Set up the configuration file first. You need to put your API key in the configuration file if you want to load the weights and biases.
+Set up the configuration file first. You need to put your API key in the "train_baseline_model.py' and "train_improved_model.py" file if you want to load the weights and biases.
 - config = load_config("config.yaml")
 - print(config)
+- BATCH_SIZE = int(config['models_config']['batch_size'])
+- WEIGHT_DECAY = int(config['models_config']['weight_decay'])
+- EPOCHS = int(config['models_config']['epochs'])
+- API_KEY = str(config['models_config']['API_KEY'])
+- CHECKPOINT_MODEL = float(config['models_config']['checkpoint_mAP'])
+
+os.environ["WANDB_API_KEY"] = API_KEY
+
 ### Load model
 Load the pretrained modle from the file 
 - LOAD_MODEL_FILE= r'saved_models/model_full_data_80_tensor(0.9161).pth.tar' : put your path directory here.
@@ -47,3 +55,4 @@ and in the file " inference models.ipynb" for improved one.
 - For a total of 86 epochs baseline model is trained on a train set using Adam optimizer with the learning rate of 2e-5, batch size of 64 and achieving highest map of 91.16% at 80th epoch, which is our highest performing checkpoint of the baseline model. 
 - For a total of 68 epochs, the improved model is trained on a train set using Adam optimizer with the learning rate of 1e-3, batch size of 64 and achieving the highest map of 93.91% ~ 94% at 68th epoch, which is our highest performing checkpoint of the improved model.
 - The training graphs give a quantitative demonstration of the ResNet50 model's better exhibition over the standard YOLOv1 model.
+- Metrices are logged  per epoch. Every point in the wandb graph represents an epoch.
