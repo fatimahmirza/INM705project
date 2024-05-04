@@ -18,8 +18,8 @@ Set up the configuration file first. You need to put your API key in the configu
 Load the pretrained modle from the file 
 - LOAD_MODEL_FILE= r'saved_models/model_full_data_80_tensor(0.9161).pth.tar' : put your path directory here.
 ### Running or Testing
-For further development or testing you need to run it locally.You need to put your path directory in the file for baseline model 
-and in the file " for improved one.
+For further development or testing you need to run it locally.You need to put your path directory in the file " inference models.ipynb"for baseline model 
+and in the file " inference models.ipynb" for improved one.
 ## Training 
 -  seed : 123
 -  batch_size : 64
@@ -33,4 +33,9 @@ and in the file " for improved one.
 
 -  improved:
     learning_rate: 1e-3
+## Checkpoints 
+save_checkpoint(state, filename="my_checkpoint.pth.tar"):
+    print("=> Saving checkpoint")
+    torch.save(state, filename) :  To save checkpoints.
+
 
