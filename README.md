@@ -34,7 +34,7 @@ and in the file " inference models.ipynb" for improved one.
 
 -  improved:
     learning_rate: 1e-3
-### TRain baseline model
+### Train models
 - To train baseline model put your path directories in the file " train_baseline_model.py "
 - To train imroved model put your path directories in the file " train_improved_model.py "
 ## Checkpoints 
@@ -42,5 +42,8 @@ and in the file " inference models.ipynb" for improved one.
 -    print("=> Saving checkpoint")
   -  torch.save(state, filename) :  To save checkpoints.
 -  checkpoint_mAP 0.0 means save model at every epoch.
-- checkpoint_mAP above 0.0 means model will only be saved when this threshold is met. 
-
+- checkpoint_mAP above 0.0 means model will only be saved when this threshold is met.
+## Metrices
+- For a total of 86 epochs baseline model is trained on a train set using Adam optimizer with the learning rate of 2e-5, batch size of 64 and achieving highest map of 91.16% at 80th epoch, which is our highest performing checkpoint of the baseline model. 
+- For a total of 68 epochs, the improved model is trained on a train set using Adam optimizer with the learning rate of 1e-3, batch size of 64 and achieving the highest map of 93.91% ~ 94% at 68th epoch, which is our highest performing checkpoint of the improved model.
+- The training graphs give a quantitative demonstration of the ResNet50 model's better exhibition over the standard YOLOv1 model.
